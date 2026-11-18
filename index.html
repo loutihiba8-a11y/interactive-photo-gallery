@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie de photos</title>
+    <style>
+        .gallery img { width: 200px; margin: 10px; cursor: pointer; }
+        #preview { margin-top: 20px; font-size: 1.25em; }
+    </style>
+</head>
+<body>
+
+    <h1>Galerie de photos interactive</h1>
+    
+    <div class="gallery">
+        <img src="photo1.jpg" alt="Description de la première photo" tabindex="0">
+        <img src="photo2.jpg" alt="Description de la deuxième photo" tabindex="0">
+    </div>
+
+    <div id="preview" aria-live="polite">Passez la souris sur une image ou sélectionnez-la pour l'afficher.</div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
